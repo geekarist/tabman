@@ -1,4 +1,4 @@
 tabman
 ======
 
-Tablature manager.
+Super heroic tablature manager.
