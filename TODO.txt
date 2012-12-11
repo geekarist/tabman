@@ -1,0 +1,6 @@
+TODO:
+Use json file for data
+Use mongolab rest service for data
+
+DONE:
+Create page with 2 songs, using angular.js and 1 controller, with data in a js variable

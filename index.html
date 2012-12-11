@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title></title>
+    <script src="angular.min.js"></script>
+    <script src="tabman.js"></script>
+</head>
+<body>
+<ul ng-controller="TabManController">
+    <li ng-repeat="tab in allTabs">{{tab.title}}, interpr&eacute;t&eacute; par {{tab.artist}}</li>
+</ul>
+</body>
+</html>
