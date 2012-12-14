@@ -4,10 +4,13 @@
     <title></title>
     <script src="angular.min.js"></script>
     <script src="tabman.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 </head>
 <body>
-<ul ng-controller="TabManController">
-    <li ng-repeat="tab in allTabs">{{tab.title}}, interpr&eacute;t&eacute; par {{tab.artist}}</li>
-</ul>
+<table class="table table-striped" ng-controller="TabManController">
+    <tr ng-repeat="tab in allTabs">
+        <td>{{tab.title}}, interpr&eacute;t&eacute; par {{tab.artist}}</td>
+    </tr>
+</table>
 </body>
 </html>
