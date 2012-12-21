@@ -1,16 +1,22 @@
 [
     {
-        "_id":{
-            "$oid":"50c793b8e4b067a576ea9ead"
-        },
         "artist":"Radiohead",
         "title":"Creep"
-    } ,
+    },
     {
-        "_id":{
-            "$oid":"50c793eee4b067a576ea9eb1"
-        },
         "artist":"Johnny Cash",
         "title":"I'm so lonesome I could cry"
+    },
+    {
+        "artist":"Bob Dylan",
+        "title":"Blowin' in the wind"
+    },
+    {
+        "artist":"Bob Dylan",
+        "title":"It ain't me babe"
+    },
+    {
+        "artist":"Warren Zevon",
+        "title":"When Johnny strikes up the band"
     }
 ]

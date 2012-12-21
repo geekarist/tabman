@@ -1,8 +1,11 @@
-function TabManController($scope) {
-    $scope.allTabs = [
-        { artist:"Radiohead", title:"Creep" },
-        { artist:"Johnny Cash", title:"I'm so lonesome I could cry" },
-        { artist:"Bob Dylan", title:"Blowin' in the wind" },
-        { artist:"Bob Dylan", title:"It ain't me babe" }
-    ];
+function TabManController($scope, $http) {
+    // https://api.mongolab.com/api/1/databases/tabman/collections/tabs?apiKey=50c792bbe4b067a576ea9ea0
+    // tabs.json?callback=JSON_CALLBACK
+    $http.get('tabs.json')
+        .success(function (data, status, headers, config) {
+            $scope.allTabs = data;
+        })
+        .error(function (data, status) {
+            $scope.error = true;
+        });
 }

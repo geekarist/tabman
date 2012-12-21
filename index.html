@@ -2,15 +2,19 @@
 <html ng-app>
 <head>
     <title></title>
-    <script src="angular.min.js"></script>
-    <script src="tabman.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="tabman.css"/>
 </head>
-<body>
-<table class="table table-striped" ng-controller="TabManController">
+<body ng-controller="TabManController">
+<table class="table table-striped">
     <tr ng-repeat="tab in allTabs">
-        <td>{{tab.title}}, interpr&eacute;t&eacute; par {{tab.artist}}</td>
+        <td class="tc"><strong>{{tab.title}}</strong>, interpreted by <strong>{{tab.artist}}</strong></td>
+    </tr>
+    <tr ng-show="error">
+        <td class="text-error tc">Error while fetching songs!</td>
     </tr>
 </table>
+<script src="angular.min.js"></script>
+<script src="tabman.js"></script>
 </body>
 </html>
