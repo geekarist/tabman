@@ -1,6 +1,9 @@
 TODO:
-Get data from json file
-Get data from mongolab rest service
+Setup testacular
+Write unit test using testacular
+Write e2e test using testacular
+Get data from mongolab
 
 DONE:
+Get data from json file
 Create page with 2 songs, using angular.js and 1 controller, with data in a js variable

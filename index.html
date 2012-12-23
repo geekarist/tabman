@@ -8,7 +8,9 @@
 <body ng-controller="TabManController">
 <table class="table table-striped">
     <tr ng-repeat="tab in allTabs">
-        <td class="tc"><strong>{{tab.title}}</strong>, interpreted by <strong>{{tab.artist}}</strong></td>
+        <td class="tc">
+            <strong>{{tab.title}}</strong>, interpreted by <strong>{{tab.artist}}</strong>
+        </td>
     </tr>
     <tr ng-show="error">
         <td class="text-error tc">Error while fetching songs!</td>
