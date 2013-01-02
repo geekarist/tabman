@@ -1,7 +1,13 @@
-describe('Array', function(){
-    describe('#indexOf()', function(){
-        it('should return -1 when the value is not present', function(){
-            expect([1, 2, 3].indexOf(5)).toEqual(-1);
+'use strict';
+
+describe('tabman', function(){
+    describe('main view', function(){
+        beforeEach(function() {
+           browser().navigateTo('http://localhost/tabman');
+        });
+        it('should print all the tabs', function(){
+            expect(element('//tr/td[1]').text()).
+                toMatch(/Creep, interpreted by Radiohead/);
         });
     });
 });
