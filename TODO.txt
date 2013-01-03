@@ -1,5 +1,5 @@
 TODO:
-Write e2e test using testacular
+Write e2e test using testacular (cf. http://goo.gl/qP4r4)
 Write unit test using testacular
 Get data from mongolab
 

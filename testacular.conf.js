@@ -3,20 +3,22 @@
 
 
 // base path, that will be used to resolve files and exclude
-basePath = '';
+basePath = './';
 
 
 // list of files / patterns to load in the browser
 files = [
-  JASMINE,
-  JASMINE_ADAPTER,
-  '*-test.js'
+    JASMINE,
+    JASMINE_ADAPTER,
+    'angular.min.js',
+    'angular-mocks.js',
+    '*-test.js'
 ];
 
 
 // list of files to exclude
 exclude = [
-  '.idea/*'
+    '*/.idea/*'
 ];
 
 
